@@ -20,7 +20,7 @@ def bubble_sort_slow(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
-# Data yang sama untuk keduanya
+# Data yang sama untuk versi cepat dan versi lambat
 data = [64, 34, 25, 12, 22, 11, 90]
 
 # Bubble Sort versi cepat
