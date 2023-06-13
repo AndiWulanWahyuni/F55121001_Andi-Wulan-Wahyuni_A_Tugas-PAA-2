@@ -25,16 +25,16 @@ data = [64, 34, 25, 12, 22, 11, 90]
 
 # Bubble Sort versi cepat
 start_time = time.perf_counter()
-sorted_data_fast = bubble_sort_fast(data)
+sorted_data_fast = bubble_sort_fast(data.copy())
 end_time = time.perf_counter()
 execution_time_fast = end_time - start_time
 print("Hasil Bubble Sort (Versi Cepat):", sorted_data_fast)
-print("Waktu eksekusi (Versi Cepat):", execution_time_fast)
+print("Waktu eksekusi (Versi Cepat):", execution_time_fast, "detik")
 
 # Bubble Sort versi lambat
 start_time = time.perf_counter()
-sorted_data_slow = bubble_sort_slow(data)
+sorted_data_slow = bubble_sort_slow(data.copy())
 end_time = time.perf_counter()
 execution_time_slow = end_time - start_time
 print("Hasil Bubble Sort (Versi Lambat):", sorted_data_slow)
-print("Waktu eksekusi (Versi Lambat):", execution_time_slow)
+print("Waktu eksekusi (Versi Lambat):", execution_time_slow, "detik")
